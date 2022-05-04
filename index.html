@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <head>
+
+  <body>
+    <form class="adform" action="" method="get">
+      <header>
+        <h3>Admission Form</h3>
+        <small>Enter your admission information here</small>
+
+      </header>
+      <section class="name">
+        <div>Name <span>*</span></div>
+        <input type="text" name="" id="fname">
+        <label for="fname">First name</label>
+
+
+        <input type="text" name="" id="midname">
+        <label for="midname">Middle name</label>
+
+
+        <input type="text" name="" id="lname">
+        <label for="lname">Lastname</label>
+
+      </section>
+      <section class="brdate">
+        <label for="date">Date of birth<span> *</span></label>
+        <div>
+          <input type="date" id="date">
+        </div>
+
+      </section>
+      <!--Gender-->
+      <section class="gender" value=" ">
+        <div>Gender<span> *</span></div>
+        <div>
+          <input type="radio" name="gender" id="male" onclick="gen('male')">
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" onclick="gen('Female')" checked>
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="other" onclick="gen('NAN')">
+          <label for="other">Decline to answer</label>
+        </div>
+      </section>
+
+      <section class="Race" value="">
+        <div>Race<span> *</span></div>
+        <div>
+          <input type="checkbox" name="race" id="Amer" onclick="race_e('America')">
+          <label for="Amer">America</label>
+          <div>
+          </div>
+          <input type="checkbox" id="black" onclick="race_e('Black')">
+          <label for="black">Black</label>
+        </div>
+        <div>
+          <input type="checkbox" name="race" id="asian" onclick="race_e('Asian')">
+          <label for="asian">Asian</label>
+        </div>
+        <div>
+          <input type="checkbox" name="race" id="white" onclick="race_e('white')">
+          <label for="white">White</label>
+        </div>
+        <div>
+          <input type="checkbox" name="race" id="native" onclick="race_e('Native')">
+          <label for="native">Native</label>
+        </div>
+        <div>
+          <input type="checkbox" name="race" id="decline" onclick="race_e('NaN')">
+          <label for="decline">Decline to answer</label>
+        </div>
+      </section>
+      <section class="country">
+        <div>of which country you belong<span> *</span></div>
+        <input type="text" placeholder="Country" id="country">
+      </section>
+      <section class="phnumber">
+        <div>Phone number<span> *</span></div>
+        <input type="tel" placeholder="(000)-000-000" name="" id="phnumber">
+      </section>
+      <section class="email">
+        <div>E-mail address<span> *</span></div>
+        <input type="email" placeholder="abc@gmail.com" name="" id="email">
+      </section>
+      <section class="mailing">
+        <div>Mailing Address<span> *</span></div>
+        <input type="text" name="" id="street1">
+        <label for="street1">street Address</label>
+        <input type="text" name="" id="street2">
+        <label for="street2">street Address line 2</label>
+        <input type="text" name="" id="city">
+        <label for="city">City</label>
+        <input type="text" name="" id="state">
+        <label for="state">State</label>
+        <input type="text" id="zip">
+        <label for="zip">Zip code</label>
+      </section>
+      <section class="btn">
+        <input type="submit" value="Submit">
+      </section>
+
+      <input type="button" value="Preview" id="prev" onclick="lodo()">
+
+    </form>
+    <!--preview-->
+    <form id="form2" class="form2" method="post">
+      <section class="pre_detail">
+        <!-- name-->
+        <section class="name_sec">
+          <label for="p_name">Name:</label>
+          <input type="text" value="" id="p_name" readonly>
+        </section>
+        <!-- date-->
+        <section class="date_sec">
+          <label for="p_date">Date:</label>
+          <input type="text" name="" id="p_date" readonly>
+        </section>
+        <!-- gender-->
+
+        <section class="gender_sec">
+          <label for="p_gender">Gender:</label>
+          <input type="text" name="" id="p_gender" readonly>
+        </section>
+        <!-- p race-->
+        <section class="race_sec">
+          <label for="p_race">Race:</label>
+          <input type="text" name="" id="p_race" readonly>
+        </section>
+
+
+        <!-- country-->
+        <section class="country_sec">
+          <label for="p_country">Country:</label>
+          <input type="text" name="" id="p_country" readonly>
+        </section>
+        <!-- phnumber-->
+        <section class="phnumber_sec">
+          <label for="p_phnumber">phone number:</label>
+          <input type="text" name="" id="p_phnumber" readonly>
+        </section>
+        <!-- email-->
+        <section class="email_sec">
+          <label for="p_email">E-mail:</label>
+          <input type="text" name="" id="p_email" readonly>
+        </section>
+        <!-- date-->
+        <section class="zip_sec">
+          <label for="p_zip">Zip:</label>
+          <input type="text" name="" id="p_zip" readonly>
+        </section>
+        <!-- address-->
+        <section class="address_sec">
+          <h4>Address:</h4>
+          <label for="p_address">Address info:</label>
+          <input type="text" name="" id="p_address" readonly>
+
+
+          <label for="p_city">City:</label>
+          <input type="text" name="" id="p_city" readonly>
+          <label for="p_state">State:</label>
+          <input type="text" name="" id="p_state" readonly>
+
+
+        </section>
+      </section>
+    </form>
+    <script src="main.js"></script>
+  </body>
+
+</html>
