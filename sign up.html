@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robot" content="index follow">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/Homepage /Forms/SIGN UP/sign-upstyle.css">
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <!-- user information -->
+  <main>
+    <form method="" action="">
+      <!-- User name info -->
+      <div>
+        <!-- First name -->
+        <label for="fname">First:<span>*</span></label>
+      <input type="text" name="first" id="fname" placeholder="First name" autofocus required>
+      </div>
+      <!-- Middle name -->
+      <div>
+      <label for="midname">Middle</label>
+      <input type="text" name="Middle" id="midname" placeholder="Middle name">
+      </div>
+      <!-- Last name -->
+      <div>
+        <label for="lname">Last: <span>* </span></label>
+        <input type="text" name="lastname" id="lname" placeholder="Last Name">
+      </div>
+      <!-- Date of birth -->
+      <div>
+        <label for="Dob">Date of birth <span>*</span></label>
+        <input type="date" min="1942" max="21226" name="Date of birth" id="Dob">
+      </div>
+      <!-- Gender -->
+      <div>
+        <label>Gender <span>*</span></label>
+        <select name="Gender" id="Gender">
+          <option value="Select">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <!-- Phone no -->
+      <div>
+        <label for="no">Phone No <span>*</span></label>
+        <input type="number" min ="10" max="20" name="Phone No" id="no" required>
+      </div>
+      <!-- Email address -->
+      <div>
+        <label for="mail">Email</label>
+        <input type="email" name="Email" id="mail" required>
+      </div>
+      <!-- Username id -->
+      <div>
+        <label for="uname">Username <span>*</span></label>
+        <input type="text" name="Username" id="uname" required>
+      </div>
+      <!-- Password -->
+      <div>
+      <label for="pass">Password <span>*</span></label>
+      <input type="password" name="Password" id="pass" required>
+      </div>
+      <!-- Confirm Password -->
+      <div>
+        <label for="cp">Confirm Password <span>*</span></label>
+        <input type="password" name="Confirm Password" id="cp" required>
+      </div>
+            <!-- Country -->
+            <div>
+              <label for="Country">Country <span>*</span></label>
+              <select name="Country" id="Country">
+                <option value"Select">Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+              </select>
+            </div>
+      <!-- Create and sign in button -->
+      <div>
+        <input type="submit" value="Create Now"name="" id="sign up">
+        <input type="button" value="Sign In"name="" id="sign in">
+      </div>
+  
+    </form>
+  </main>
+</body>
+
+</html>
